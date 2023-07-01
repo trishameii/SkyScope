@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run chr(34) & "nginx_handler.bat" & Chr(34), 0

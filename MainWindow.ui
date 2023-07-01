@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow_UI</class>
+ <widget class="QMainWindow" name="MainWindow_UI">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>1057</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SkyScope</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/logo (2).png</normaloff>img/logo (2).png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="mainFrame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+   background: transparent;
+   border: none;
+}
+
+QFrame{
+   background: &quot;#181735&quot;;
+   font: 12pt &quot;Dosis&quot;;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="titleFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Dosis</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(15, 15, 32);
+height: 50px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QFrame" name="titleFrameLogo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="logo">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Ignored" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>img/logo2.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="skyscope">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Ignored" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+font: 12 12pt &quot;Dosis ExtraLight&quot;;
+Margin-left: 2px;</string>
+               </property>
+               <property name="text">
+                <string>SkyScope</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="titleFrameWidgets">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>170</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+  background: &quot;#393850&quot;;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="minButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>100</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/min.png</normaloff>icons/min.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="maxButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>100</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/max_icon.png</normaloff>icons/max_icon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="closeButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>100</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/x_icon.png</normaloff>icons/x_icon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="widget1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget {
+font: 57 10pt &quot;Dosis Medium&quot;;
+}
+
+QTabBar::tab {
+    background-color: #6f7473;
+    border: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    padding: 8px;
+    min-width: 130px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+QTabBar::tab:selected {
+    background-color: #2cb3a4;
+    color: #ffffff;
+}
+
+QTabWidget::pane {
+    border: 4px solid #161530;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+margin-left: 50px;
+margin-right: 50px;
+margin-bottom: 50px;
+}
+
+QTabBar::tab:first{
+margin-left: 50px;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+</string>
+         </property>
+         <property name="tabPosition">
+          <enum>QTabWidget::North</enum>
+         </property>
+         <property name="tabShape">
+          <enum>QTabWidget::Rounded</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="documentMode">
+          <bool>false</bool>
+         </property>
+         <property name="tabsClosable">
+          <bool>false</bool>
+         </property>
+         <property name="tabBarAutoHide">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="homeTab">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <attribute name="title">
+           <string>Home</string>
+          </attribute>
+          <widget class="QLabel" name="upperPattern">
+           <property name="geometry">
+            <rect>
+             <x>379</x>
+             <y>-510</y>
+             <width>1931</width>
+             <height>900</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/waves07.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lowerPattern">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>720</y>
+             <width>2500</width>
+             <height>600</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/waves07.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>90</y>
+             <width>700</width>
+             <height>618</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <widget class="QLabel" name="mainDescLabel">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>80</y>
+              <width>421</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 57 22pt &quot;Dosis Medium&quot;;</string>
+            </property>
+            <property name="text">
+             <string>DJI Mini 2 for Windows </string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="subDesc">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>390</y>
+              <width>681</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 57 14pt &quot;Dosis Medium&quot;;</string>
+            </property>
+            <property name="text">
+             <string>The compact Solution for powerline inspection made 
+easy with DJI Mini 2's precision and portability.</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="yourDesc">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>230</y>
+              <width>350</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 57 18pt &quot;Dosis Medium&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Your</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="powerUpDesc">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>170</y>
+              <width>350</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 57 18pt &quot;Dosis Medium&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Power up</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="inspectionDesc">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>290</y>
+              <width>350</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 57 18pt &quot;Dosis Medium&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Inspection</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="cameraComboBox">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>520</y>
+              <width>250</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Dosis</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Select Camera Mode:
+Device Camera - Select from the currently available device camera
+RTMP Camera - Select external camera connected via rtmp mode</string>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QComboBox {
+padding-left: 50px;
+border-radius: 10px;
+background-color: #393850;
+color: white;
+selection-background-color: #2cb3a4;
+font: 12pt &quot;Dosis&quot;;
+}
+QComboBox QAbstractItemView {
+background-color: #393850;
+selection-background-color: #2cb3a4;
+height: 110px;
+}
+QComboBox QAbstractItemView::item {
+padding-left: 30px;
+}
+
+
+</string>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string>Device Camera</string>
+            </property>
+            <property name="insertPolicy">
+             <enum>QComboBox::NoInsert</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>Device Camera</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RTMP Camera</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="directoryButton">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>520</y>
+              <width>250</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Choose a local directory for your project files</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #393850;
+color: rgb(255, 255, 255);
+border-radius: 10px;
+font: 12pt &quot;Dosis&quot;;
+}
+QPushButton::Hover{
+background-color: #2cb3a4;
+}</string>
+            </property>
+            <property name="text">
+             <string>Change Directory</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="ImportFootage">
+          <attribute name="title">
+           <string>Import Footage</string>
+          </attribute>
+          <widget class="QGroupBox" name="inspectionDetails">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>500</width>
+             <height>630</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #161530;
+font: 10pt &quot;Dosis&quot;;
+color: #b7bab9;</string>
+           </property>
+           <property name="title">
+            <string>Inspection Details</string>
+           </property>
+           <widget class="QPushButton" name="saveDetails">
+            <property name="geometry">
+             <rect>
+              <x>175</x>
+              <y>560</y>
+              <width>150</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(53, 58, 90);
+color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+QPushButton::Hover{
+	background-color: rgb(121, 124, 145);
+}</string>
+            </property>
+            <property name="text">
+             <string>Save</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="locationLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Location</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dateLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>220</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Date</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="serialnumLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Serial Number</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="inspectorLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Inspector</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="heightLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>460</y>
+              <width>140</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Height (m)</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="voltageLabel">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>380</y>
+              <width>140</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Voltage (kV)</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="locationText">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>90</y>
+              <width>440</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(159, 159, 166);
+color: #383a3a;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dosis SemiBold'; font-size:10pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Dosis'; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Street, City, Zip</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="inspectorText">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>170</y>
+              <width>440</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(159, 159, 166);
+color: #383a3a;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dosis SemiBold'; font-size:10pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Dosis'; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Firstname MI Lastname</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="dateText">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>250</y>
+              <width>440</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor" stdset="0">
+             <cursorShape>ForbiddenCursor</cursorShape>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(159, 159, 166);
+color: #383a3a;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dosis SemiBold'; font-size:10pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Dosis'; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+            </property>
+            <property name="placeholderText">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="serialnumText">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>330</y>
+              <width>440</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(159, 159, 166);
+color: #383a3a;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dosis SemiBold'; font-size:10pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Dosis'; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Transformer's serial num (check nameplate)</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="voltageText">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>410</y>
+              <width>440</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(159, 159, 166);
+color: #383a3a;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dosis SemiBold'; font-size:10pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Dosis'; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Transformer's rated voltage (check nameplate)</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="heightText">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>490</y>
+              <width>440</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(159, 159, 166);
+color: #383a3a;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dosis SemiBold'; font-size:10pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Dosis'; font-weight:792;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="placeholderText">
+             <string>Transformer's height (check nameplate)</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="newFile">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>20</y>
+              <width>120</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Dosis</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>ForbiddenCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(39, 39, 54);
+color: rgb(255, 255, 255);
+font: 8pt &quot;Dosis&quot;;
+}</string>
+            </property>
+            <property name="text">
+             <string>New file</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="controls">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>670</y>
+             <width>500</width>
+             <height>150</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #161530;
+font: 10pt &quot;Dosis&quot;;
+color: #b7bab9;</string>
+           </property>
+           <property name="title">
+            <string>Controls</string>
+           </property>
+           <widget class="QLabel" name="speedLabel">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>50</y>
+              <width>140</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Speed</string>
+            </property>
+           </widget>
+           <widget class="QSlider" name="speedSlider">
+            <property name="geometry">
+             <rect>
+              <x>75</x>
+              <y>90</y>
+              <width>350</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="singleStep">
+             <number>1</number>
+            </property>
+            <property name="pageStep">
+             <number>12</number>
+            </property>
+            <property name="value">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksAbove</enum>
+            </property>
+            <property name="tickInterval">
+             <number>1</number>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="importFootage">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>20</y>
+             <width>1200</width>
+             <height>800</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #161530;
+font: 10pt &quot;Dosis&quot;;
+color: #b7bab9;</string>
+           </property>
+           <widget class="QPushButton" name="importButton">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>20</y>
+              <width>150</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgb(53, 58, 90);
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+QPushButton::Hover{
+	background-color: rgb(121, 124, 145);
+}</string>
+            </property>
+            <property name="text">
+             <string>Import</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="captureButton">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>685</y>
+              <width>160</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 57 12pt &quot;Dosis Medium&quot;;
+text-transform: none;
+padding-left: 5px;
+border-radius: 8px;
+}
+
+QPushButton::Hover{
+	background-color: rgb(255, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>CAPTURE</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/capture.png</normaloff>icons/capture.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QLabel" name="mediaLabel">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>70</y>
+              <width>1100</width>
+              <height>600</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="directoryText">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>685</y>
+              <width>550</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="cursor" stdset="0">
+             <cursorShape>ForbiddenCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Project files will be saved in this directory</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(53, 58, 90);
+color: #ffffff;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="acceptRichText">
+             <bool>false</bool>
+            </property>
+            <property name="placeholderText">
+             <string>C:\Users\USER\Desktop\Thesis</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="fileType">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>20</y>
+              <width>150</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(53, 58, 90);
+color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Video File</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Image File</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="runButton">
+            <property name="geometry">
+             <rect>
+              <x>1000</x>
+              <y>20</y>
+              <width>150</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Run foreign object detection</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgb(53, 58, 90);
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+QPushButton::Hover{
+	background-color: rgb(121, 124, 145);
+}</string>
+            </property>
+            <property name="text">
+             <string>Run Detection</string>
+            </property>
+           </widget>
+           <widget class="QSlider" name="scrubberBar">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>630</y>
+              <width>1000</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider{
+   background: transparent;
+}
+
+QSlider::groove:horizontal {
+    height: 5px;
+    border-radius: 5px;
+    background: gray;
+}
+
+QSlider::add-page:horizontal {
+    background-color: transparent;
+}
+
+QSlider::sub-page:horizontal {
+    background-color: red;
+}
+
+QSlider::handle:horizontal {
+    width: 16px;
+    height: 20px;
+    border-radius: 8px;
+    background: red;
+    margin: -6px 2px;
+}</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QFrame" name="videoWidgets">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>525</y>
+              <width>400</width>
+              <height>100</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: transparent;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+              <widget class="QPushButton" name="backButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: transparent;
+height: 80px;
+width: 80px;
+border-radius: 40px;
+}
+
+QPushButton::Hover{
+background-color: #9a9aa1;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/bwrd.png</normaloff>icons/bwrd.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>60</width>
+                 <height>48</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QPushButton" name="playVidButton">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: transparent;
+border-radius: 40px;
+}
+
+QPushButton::Hover{
+background-color: #9a9aa1;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/pause.png</normaloff>icons/pause.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>80</width>
+                 <height>80</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+              <widget class="QPushButton" name="skipButton">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+background-color: transparent;
+height: 80px;
+width: 80px;
+border-radius: 40px;
+}
+
+QPushButton::Hover{
+background-color: #9a9aa1;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/fwrd.png</normaloff>icons/fwrd.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>50</width>
+                 <height>48</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="mediaDirectoryLabel">
+            <property name="geometry">
+             <rect>
+              <x>450</x>
+              <y>685</y>
+              <width>140</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);
+background-color: transparent;</string>
+            </property>
+            <property name="text">
+             <string>Current Directory</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="modelButton">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>20</y>
+              <width>150</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Load model from the current directory</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgb(53, 58, 90);
+	color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+QPushButton::Hover{
+	background-color: rgb(121, 124, 145);
+}</string>
+            </property>
+            <property name="text">
+             <string>Load Model</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="modelStatus">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>29</y>
+              <width>441</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Model Status</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="importInfoButton">
+            <property name="geometry">
+             <rect>
+              <x>970</x>
+              <y>740</y>
+              <width>180</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid #353A5A;
+border-radius: 5px;
+background: transparent;
+color: rgb(255, 255, 255);
+
+</string>
+            </property>
+            <property name="text">
+             <string notr="true">INFORMATION</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/info.png</normaloff>icons/info.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="upperPattern_2">
+           <property name="geometry">
+            <rect>
+             <x>379</x>
+             <y>-510</y>
+             <width>1931</width>
+             <height>900</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/waves07.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lowerPattern_2">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>720</y>
+             <width>2500</width>
+             <height>600</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/waves07.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <zorder>lowerPattern_2</zorder>
+          <zorder>upperPattern_2</zorder>
+          <zorder>inspectionDetails</zorder>
+          <zorder>controls</zorder>
+          <zorder>importFootage</zorder>
+         </widget>
+         <widget class="QWidget" name="streamTab">
+          <attribute name="title">
+           <string>Start Live View</string>
+          </attribute>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>500</width>
+             <height>800</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #161530;
+font: 10pt &quot;Dosis&quot;;
+color: #b7bab9;</string>
+           </property>
+           <property name="title">
+            <string>Camera Options</string>
+           </property>
+           <widget class="QLabel" name="selectCameraLabel">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>60</y>
+              <width>300</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Select Camera</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="cameraDropdown">
+            <property name="geometry">
+             <rect>
+              <x>75</x>
+              <y>100</y>
+              <width>350</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(53, 58, 90);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Default Camera</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="brightnessLabel">
+            <property name="geometry">
+             <rect>
+              <x>35</x>
+              <y>200</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Brightness</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="contrastLabel">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>340</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Contrast</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="saturationLabel">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>480</y>
+              <width>140</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Saturation</string>
+            </property>
+           </widget>
+           <widget class="QSlider" name="brightnessSlider">
+            <property name="geometry">
+             <rect>
+              <x>75</x>
+              <y>240</y>
+              <width>350</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="minimum">
+             <number>-100</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>20</number>
+            </property>
+            <property name="pageStep">
+             <number>20</number>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="sliderPosition">
+             <number>0</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksAbove</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="contrastSlider">
+            <property name="geometry">
+             <rect>
+              <x>75</x>
+              <y>380</y>
+              <width>350</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="minimum">
+             <number>-100</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>20</number>
+            </property>
+            <property name="pageStep">
+             <number>20</number>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksAbove</enum>
+            </property>
+           </widget>
+           <widget class="QSlider" name="saturationSlider">
+            <property name="geometry">
+             <rect>
+              <x>75</x>
+              <y>520</y>
+              <width>350</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="minimum">
+             <number>-100</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>20</number>
+            </property>
+            <property name="pageStep">
+             <number>20</number>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksAbove</enum>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="ipAddrText">
+            <property name="geometry">
+             <rect>
+              <x>75</x>
+              <y>100</y>
+              <width>350</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(53, 58, 90);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="placeholderText">
+             <string>192.168.43.1</string>
+            </property>
+           </widget>
+           <zorder>ipAddrText</zorder>
+           <zorder>selectCameraLabel</zorder>
+           <zorder>cameraDropdown</zorder>
+           <zorder>brightnessLabel</zorder>
+           <zorder>contrastLabel</zorder>
+           <zorder>saturationLabel</zorder>
+           <zorder>brightnessSlider</zorder>
+           <zorder>contrastSlider</zorder>
+           <zorder>saturationSlider</zorder>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>20</y>
+             <width>1200</width>
+             <height>800</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #161530;
+font: 10pt &quot;Dosis&quot;;
+color: #b7bab9;</string>
+           </property>
+           <property name="title">
+            <string>Camera Stream</string>
+           </property>
+           <widget class="QFrame" name="streamWidgets">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>575</y>
+              <width>400</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: transparent;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>50</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="stopStream">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	font: 81 14pt &quot;Dosis ExtraBold&quot;;
+	color: rgb(255, 255, 255);
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+	background-color: transparent;
+}
+QPushButton::Hover{
+	background-color: #9a9aa1;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>STOP</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QPushButton" name="recordStream">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+	background-color: red;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/record.png</normaloff>icons/record.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QPushButton" name="captureStream">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+ border-radius: 40px;
+width: 80px;
+height: 80px;
+background-color: transparent;
+}
+QPushButton::Hover{
+background-color: rgb(154, 154, 161);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icons/capture.png</normaloff>icons/capture.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>50</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="recordTime">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>80</y>
+              <width>230</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: transparent;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+color: rgb(170, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>Recording time: </string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="streamDirectory">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>685</y>
+              <width>550</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="cursor" stdset="0">
+             <cursorShape>ForbiddenCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Project files will be saved in this directory</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgb(53, 58, 90);
+color: #ffffff;
+font: 63 10pt &quot;Dosis SemiBold&quot;;
+padding-left: 10px;
+border-radius: 5px;
+}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>C:\Users\USER\Desktop\Thesis</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="captureDirectoryLabel">
+            <property name="geometry">
+             <rect>
+              <x>450</x>
+              <y>685</y>
+              <width>140</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt;
+color: rgb(255, 255, 255);
+background-color: transparent;</string>
+            </property>
+            <property name="text">
+             <string>Current Directory</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="startStream">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>685</y>
+              <width>160</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: rgb(170, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 57 12pt &quot;Dosis Medium&quot;;
+	border-radius: 8px;
+}
+QPushButton::Hover{
+	background-color: rgb(255, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>START STREAM</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="streamLabel">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>70</y>
+              <width>1100</width>
+              <height>600</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="streamInfoButton">
+            <property name="geometry">
+             <rect>
+              <x>970</x>
+              <y>740</y>
+              <width>180</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 4px solid #353A5A;
+border-radius: 5px;
+background: transparent;
+color: rgb(255, 255, 255);
+
+</string>
+            </property>
+            <property name="text">
+             <string notr="true">INFORMATION</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/info.png</normaloff>icons/info.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+           <zorder>streamLabel</zorder>
+           <zorder>streamWidgets</zorder>
+           <zorder>recordTime</zorder>
+           <zorder>streamDirectory</zorder>
+           <zorder>captureDirectoryLabel</zorder>
+           <zorder>startStream</zorder>
+           <zorder>streamInfoButton</zorder>
+          </widget>
+          <widget class="QLabel" name="lowerPattern_3">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>720</y>
+             <width>2500</width>
+             <height>600</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/waves07.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="upperPattern_3">
+           <property name="geometry">
+            <rect>
+             <x>379</x>
+             <y>-510</y>
+             <width>1931</width>
+             <height>900</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>img/waves07.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <zorder>upperPattern_3</zorder>
+          <zorder>lowerPattern_3</zorder>
+          <zorder>groupBox</zorder>
+          <zorder>groupBox_2</zorder>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

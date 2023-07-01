@@ -1,0 +1,2 @@
+rootProject.name = "SkyScope Control Server"
+include ':app'
